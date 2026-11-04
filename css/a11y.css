@@ -1,0 +1,153 @@
+/*
+ * Accessibility overrides (WCAG 2.2 AA).
+ * Loaded after the Webflow-exported stylesheet so that re-exporting
+ * sentrya-whole-health.webflow.css from Webflow doesn't undo these fixes.
+ * See SITE-NOTES.md for the audit these come from.
+ */
+
+/* ---------- Color contrast (1.4.3) ---------- */
+
+/* Brand green was #3da280: white text on it was 3.14:1 (needs 4.5:1), and as
+   link text on white it was also 3.14:1. #237256 gives 5.81:1 both ways.
+   Hover was a *lighter* green (#5bc19f); it now darkens instead (7.9:1). */
+:root {
+  --ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1755883047733---core-accent-color--accent-primary: #237256;
+  --ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1755883047733---core-accent-color--accent-primary-hover: #1b5a44;
+  --ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1755883047733---text-color--text-accent-on-primary: #237256;
+}
+
+/* Eyebrow labels were text color at 60% (3.3-3.9:1 on white). 80% keeps the
+   softer look but reaches 7.2:1 on white and 9.3:1 on navy. */
+.eyebrow {
+  color: color-mix(in srgb, currentColor 80%, transparent);
+}
+
+/* Inactive feature tabs were faded with opacity: .5 (2.1-2.9:1). Keep text at
+   full strength and show the selected tab with a thicker bar instead, so the
+   state doesn't rely on faded color (1.4.1). */
+.tab_menu-link_transparent-bottom,
+.tab_menu-link_transparent-bottom:hover {
+  opacity: 1;
+}
+.tab_menu-link_transparent-bottom {
+  box-shadow: inset 0 1px 0 0 #202d4c4d;
+}
+.tab_menu-link_transparent-bottom:hover {
+  box-shadow: inset 0 2px 0 0 #202d4cb3;
+}
+.tab_menu-link_transparent-bottom.w--current {
+  opacity: 1;
+  box-shadow: inset 0 4px 0 0 #202d4c;
+}
+
+/* In dark sections, Webflow's heading/subheading classes hard-code dark text:
+   hero H1s rendered navy on navy (1:1) and subheadings black on navy (1.54:1).
+   (Can't use `inherit`: the .header wrapper inside heroes sets navy text.)
+   Note: if a white card is ever placed inside an .is-inverse section, its
+   headings will need a dark color set explicitly. */
+.is-inverse .heading_h1,
+.is-inverse .heading_h2,
+.is-inverse .heading_h3,
+.is-inverse .heading_h4 {
+  color: #fff;
+}
+.is-inverse .subheading {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Footer sits on navy but inherited dark text (effectively invisible). */
+.footer-2 {
+  color: #fff;
+}
+.footer-2 .text-color_secondary {
+  color: rgba(255, 255, 255, 0.85);
+}
+.footer-2 a:not(.logo) {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+/* ---------- Keyboard focus (2.4.7, 2.4.11) ---------- */
+
+/* Webflow removes outlines on tabs and the nav button. Give every focusable
+   element a clear ring: navy on light backgrounds, white on dark ones. */
+:focus-visible {
+  outline: 3px solid #202d4c !important;
+  outline-offset: 3px !important;
+}
+.is-inverse :focus-visible,
+.navigation :focus-visible,
+.footer-2 :focus-visible,
+.text-color_on-overlay :focus-visible {
+  outline-color: #fff !important;
+}
+/* The skip-link target receives focus programmatically; no ring needed there. */
+#main:focus,
+#main:focus-visible {
+  outline: none !important;
+}
+
+/* ---------- Skip link (2.4.1) ---------- */
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 10000; /* Webflow's .w-nav uses 1000 */
+  padding: 0.75rem 1.25rem;
+  background: #fff;
+  color: #202d4c;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-decoration: underline;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* ---------- Reflow (1.4.10) ---------- */
+
+/* Trial page images were fixed at 400px, forcing sideways scrolling on
+   narrow screens / 400% zoom. */
+.div-block,
+.image-3 {
+  max-width: 100%;
+}
+.image-3 {
+  height: auto;
+}
+
+/* ---------- Structure helpers ---------- */
+
+/* Headings whose level was corrected for document structure (trial page
+   sub-sections h2 -> h3, FAQ page title h2 -> h1) keep their old visual size. */
+.a11y-h2-size {
+  font-size: 32px;
+  line-height: 36px;
+}
+
+/* Bulleted list that replaced <br>-separated lines on the trial page. */
+.a11y-list {
+  margin-top: 0;
+  padding-left: 1.25em;
+}
+
+/* ---------- Motion (2.3.3; important for a migraine audience) ---------- */
+
+/* Scroll-driven parallax, scaling and slide effects can trigger migraines and
+   vestibular symptoms. Honor the OS "reduce motion" setting. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  [data-w-id],
+  [class*="ix_"] {
+    transform: none !important;
+  }
+}

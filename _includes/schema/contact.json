@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact Sentinel Health - Your Questions Answered",
+  "description": "Get in touch with Sentinel Health for support, inquiries, or feedback related to the Migraine Tracker app. We're here to help you.",
+  "url": "/contact",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Sentrya Whole Health",
+    "alternateName": "Sentinel Health",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://cdn.prod.website-files.com/68a8a624c17a8f26f95493d4/6916908f43392f13453b87f8_migraine_tracker_full_transparent.png"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "no-reply@mysentrya.com",
+      "contactType": "customer support"
+    },
+    "sameAs": [
+      "https://www.facebook.com/sentrya",
+      "https://www.instagram.com/sentrya",
+      "https://twitter.com/sentrya",
+      "https://www.linkedin.com/company/sentrya",
+      "https://www.youtube.com/sentrya"
+    ]
+  }
+}

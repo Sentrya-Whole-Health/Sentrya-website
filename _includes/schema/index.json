@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Home | Sentrya Whole Health - Track Your Whole Health",
+  "url": "/home",
+  "description": "Sentrya Whole Health offers an intuitive whole health tracking app for migraines, sleep, glucose, pain, and medication. Log symptoms, spot patterns, and share data with healthcare providers.",
+  "about": {
+    "@type": "SoftwareApplication",
+    "name": "Sentrya Whole Health",
+    "applicationCategory": "HealthApplication",
+    "description": "A whole health tracking app for migraines, sleep, glucose, pain, and medication. Log symptoms, spot patterns, and share data with healthcare providers.",
+    "operatingSystem": "Web, iOS, Android",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Free beta access with lifetime full access for early testers"
+    },
+    "featureList": [
+      "Pain and migraine tracking with symptom, trigger, and relief logging",
+      "Sleep tracking with quality, duration, and interruption monitoring",
+      "Glucose history via Dexcom and HealthKit/Health Connect integration",
+      "Medication management with dosage, timing, and effectiveness tracking",
+      "Provider reports with printable summaries for appointments",
+      "Dim mode for low-light use during migraine attacks",
+      "Voice control with in-browser transcription for hands-free logging",
+      "Weather widget with barometric pressure for migraine trigger identification",
+      "Correlation engine showing patterns across health metrics",
+      "Privacy-first design with no third-party data sharing"
+    ],
+    "provider": {
+      "@type": "Organization",
+      "name": "Sentrya Whole Health",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cdn.prod.website-files.com/68a8a624c17a8f26f95493d4/6916908f43392f13453b87f8_migraine_tracker_full_transparent.png"
+      }
+    }
+  }
+}

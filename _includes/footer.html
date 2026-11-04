@@ -1,0 +1,15 @@
+{% if page.url == "/" or page.url == "/index.html" %}{% assign current_attr = ' aria-current="page"' %}{% assign current_class = " w--current" %}{% else %}{% assign current_attr = "" %}{% assign current_class = "" %}{% endif %}
+  <footer class="footer-2">
+    <div class="container">
+      <div class="footer_bottom-3-col">
+        <div id="w-node-b3aa982f-5043-0718-64d9-1c4eabecadf5-b7f701f6" class="flex_horizontal tablet-vertical w-node-_8081f410-687f-99d4-0298-0ec4f4befdaa-f4befda7">
+          <a href="index.html"{{ current_attr }} class="logo w-inline-block{{ current_class }}"><img src="images/migraine_tracker_full_transparent.png" loading="lazy" width="75" height="75" alt="" srcset="images/migraine_tracker_full_transparent-p-500.png 500w, images/migraine_tracker_full_transparent-p-800.png 800w, images/migraine_tracker_full_transparent.png 1024w" sizes="75px">
+            <div data-brand-name="true" class="paragraph_xlarge margin-bottom_none text_all-caps">Sentrya Whole Health</div>
+          </a>
+        </div>
+        <div class="flex_vertical is-x-center">
+          <p class="paragraph_small text-color_secondary">Questions about the beta? <a href="mailto:no-reply@mysentrya.com?subject=Sentrya%20Beta%20Question">Email us</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>

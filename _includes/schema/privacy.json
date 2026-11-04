@@ -1,0 +1,26 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Privacy Policy",
+  "url": "/privacy",
+  "description": "Privacy Policy for Sentrya Whole Health, a personal health tracking application for migraine patterns and related health information.",
+  "dateModified": "2026-01-09",
+  "inLanguage": "en",
+  "about": {
+    "@type": "Organization",
+    "name": "Sentrya",
+    "description": "A personal health tracking application designed to help individuals better understand migraine patterns and related health information.",
+    "email": "no-reply@mysentrya.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://cdn.prod.website-files.com/68a8a624c17a8f26f95493d4/6916908f43392f13453b87f8_migraine_tracker_full_transparent.png"
+    }
+  },
+  "mainEntity": {
+    "@type": "DigitalDocument",
+    "name": "Sentrya Privacy Policy",
+    "dateModified": "2026-01-09",
+    "description": "Privacy policy explaining what information Sentrya collects, how it's used, and the choices users have regarding their health data.",
+    "text": "Sentrya is a personal health tracking application designed to help individuals better understand migraine patterns and related health information. We believe privacy is foundational to trust, especially when it comes to health data."
+  }
+}

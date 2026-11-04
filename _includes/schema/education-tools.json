@@ -1,0 +1,38 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Education Tools",
+  "description": "Discover Sentrya's mission and values. We are committed to providing tools that help migraine sufferers track their condition effectively and share relevant data with healthcare providers.",
+  "url": "/education-tools",
+  "inLanguage": "en",
+  "about": {
+    "@type": "Organization",
+    "name": "Sentrya",
+    "alternateName": "Sentrya Whole Health",
+    "description": "Empowering better migraine care through effortless tracking, clear insights, and secure data sharing with healthcare providers.",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://cdn.prod.website-files.com/68a8a624c17a8f26f95493d4/6916908f43392f13453b87f8_migraine_tracker_full_transparent.png"
+    },
+    "sameAs": [
+      "#",
+      "#",
+      "#",
+      "#"
+    ],
+    "employee": [
+      {
+        "@type": "Person",
+        "name": "Melanie Brown",
+        "jobTitle": "Lead Product Designer"
+      },
+  "mainEntity": {
+    "@type": "SoftwareApplication",
+    "name": "Sentinel Health Migraine Tracker",
+    "applicationCategory": "HealthApplication",
+    "description": "Monitor migraine patterns, triggers, and symptoms with ease. Visualize your health data, discover trends, and securely share updates with your provider.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },

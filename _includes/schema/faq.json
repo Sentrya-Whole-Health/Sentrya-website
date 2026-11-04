@@ -1,0 +1,57 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "FAQ - Sentinel Health | Migraine Tracker",
+  "description": "Get answers about the Sentinel Health Migraine Tracker app. Explore features, subscription plans, and more to help manage your migraines effectively.",
+  "url": "/faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does migraine tracking work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our app lets you log migraine episodes, symptoms, and triggers in just a few taps. Over time, you can spot patterns and share relevant data with your provider."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What information can I share?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You control what you share. Export summaries or detailed logs to your clinician, focusing only on what's helpful for your care."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my health data private?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Your data is stored securely and never shared without your consent. You decide what to keep private and what to share."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a subscription?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The free plan covers basic tracking. Upgrade to Insights+ for advanced insights and easier sharing. Choose the plan that fits your needs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use the app with my provider?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Share your migraine history and patterns directly with your healthcare provider to support more informed conversations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What devices are supported?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our app works on most modern smartphones and tablets, as well as desktop. You just need an internet connection."
+      }
+    }
+  ]
+}

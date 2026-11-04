@@ -1,0 +1,53 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Data Sharing | Sentrya Whole Health",
+  "description": "Share migraine reports with your provider securely. Track symptoms, spot patterns, and control what you share—effortlessly and privately.",
+  "url": "/data-sharing",
+  "about": {
+    "@type": "SoftwareApplication",
+    "name": "Sentrya Whole Health Data Sharing",
+    "applicationCategory": "HealthApplication",
+    "description": "Turn your migraine history into clear, doctor-ready insights without dumping raw data or giving up control. Share what matters with your healthcare provider while keeping the rest private.",
+    "operatingSystem": "Web",
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Free",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Track migraines, symptoms, and triggers. Basic charts and export.",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Sentrya Free Plan",
+          "description": "Unlimited migraine logs, symptom & trigger tracking, basic data export"
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "Insights+",
+        "description": "Advanced insights, sharing, and custom reports for deeper understanding.",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Sentrya Insights+ Plan",
+          "description": "Everything in Free, plus advanced analytics, custom reports, share with your provider, priority support"
+        }
+      }
+    ],
+    "featureList": [
+      "Track symptoms and triggers naturally by voice or text",
+      "Pattern recognition for frequency, severity, sleep impact, weather correlations",
+      "Selective data sharing with healthcare providers",
+      "Concise, readable reports for medical decision-making",
+      "Privacy-focused controls"
+    ]
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "Sentrya Whole Health",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://cdn.prod.website-files.com/68a8a624c17a8f26f95493d4/6916908f43392f13453b87f8_migraine_tracker_full_transparent.png"
+    }
+  }
+}

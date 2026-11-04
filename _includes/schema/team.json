@@ -1,0 +1,27 @@
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "Meet the Team | Sentrya Whole Health",
+  "url": "/team",
+  "description": "Learn about the team at Sentrya Whole Health who are dedicated to improving the lives of migraine sufferers through innovative tracking solutions.",
+  "about": {
+    "@type": "Organization",
+    "name": "Sentrya Whole Health",
+    "description": "Dedicated team supporting migraine management through innovative tracking solutions",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://cdn.prod.website-files.com/68a8a624c17a8f26f95493d4/6916908f43392f13453b87f8_migraine_tracker_full_transparent.png"
+    },
+    "url": "/",
+    "founder": {
+      "@type": "Person",
+      "name": "Melanie Brown",
+      "jobTitle": "Founder & Product Architect",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cdn.prod.website-files.com/68a8a624c17a8f26f95493d4/6955b7747bd06ec99cdbad32_IMG_5203.avif"
+      },
+      "description": "Living with chronic migraines made it clear how overwhelming and fragmented health tracking can be. Built Sentrya as a calm, respectful way to capture symptoms, spot patterns, and share meaningful insights without added stress."
+    }
+  }
+}

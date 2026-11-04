@@ -1,0 +1,18 @@
+{% if page.url == "/" or page.url == "/index.html" %}{% assign current_attr = ' aria-current="page"' %}{% assign current_class = " w--current" %}{% else %}{% assign current_attr = "" %}{% assign current_class = "" %}{% endif %}
+  <div class="navigation">
+    <div data-duration="400" data-animation="default" data-easing2="ease" data-easing="ease" data-collapse="medium" role="banner" data-no-scroll="1" class="nav_container w-nav">
+      <a href="index.html" class="w-inline-block{{ current_class }}" aria-hidden="true" tabindex="-1"><img src="images/sentrya_webclip.png" loading="lazy" width="75" height="75" alt=""></a>
+      <div class="nav_left">
+        <a href="index.html"{{ current_attr }} class="nav_logo w-inline-block{{ current_class }}">
+          <div data-brand-name="true" class="paragraph_large margin-bottom_none white">Sentrya Whole Health</div>
+        </a>
+      </div>
+      <div class="nav_right">
+        <div class="button-group margin-top_none">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfph8hxqAY7XVdRKyTX56WZ2o22FVRwBct909Lf_JrEGCSC0A/viewform?usp=header" target="_blank" rel="noopener" class="button on-inverse w-inline-block">
+            <div class="button_label">Join the beta<span class="screen-reader"> (opens in a new tab)</span></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>

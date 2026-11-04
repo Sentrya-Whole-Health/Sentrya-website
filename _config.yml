@@ -1,0 +1,15 @@
+# Jekyll config for mysentrya.com (built by GitHub Pages from the main branch).
+# Every page shares _layouts/default.html, which pulls in _includes/header.html
+# and _includes/footer.html, so the header and footer only need editing once.
+
+title: Sentrya Whole Health
+
+# Internal docs and tooling must never be published as pages.
+exclude:
+  - README.md
+  - SITE-NOTES.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - "**/.DS_Store"
