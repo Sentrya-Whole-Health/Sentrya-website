@@ -39,9 +39,10 @@ export over these files — copy the changed section into the matching page
 body. `css/sentrya-whole-health.webflow.css` can be replaced by a fresh export
 because all accessibility fixes live in `css/a11y.css` instead.
 
-`old-home.html` and `style-guide.html` were **not** converted (no front
-matter, so Jekyll publishes them untouched). They still have the old
-header/footer and none of the accessibility fixes — see open items.
+`old-home.html` (the future non-beta homepage — see below) and
+`style-guide.html` were **not** converted (no front matter, so Jekyll
+publishes them untouched). They still have the old header/footer and none of
+the accessibility fixes — see open items.
 
 ## Current information architecture
 
@@ -55,6 +56,12 @@ the Sentrya beta via the Google Form. It is not yet a full marketing site.
   `index.html`'s "See how" button.
 - **`privacy.html`** — linked from `trial.html` ("Learn more" under
   "Your data, always in your control").
+- **`old-home.html`** — the homepage for the full, non-beta site. Kept on
+  purpose for after the beta; not linked yet. Not a leftover — don't delete.
+  It has `<meta name="robots" content="noindex, nofollow">` so search
+  engines don't list it — **remove that tag when it becomes the live
+  homepage.** (Don't also block it in a `robots.txt`: crawlers would then
+  never see the noindex tag.)
 - **Everything else is unlinked for now**: `about.html`, `contact.html`,
   `faq.html`, `data-sharing.html`, `education-tools.html`, `team.html`,
   `migraine-log.html`, `terms.html`. They're still publicly reachable by URL.
@@ -158,9 +165,15 @@ replaced dead social-media icons with a `mailto:` contact line.
 
 ## Open items for later
 
-- **`old-home.html` / `style-guide.html`** — Webflow leftovers, still
-  published, with the old header and no accessibility fixes (no `lang`, low
-  contrast, etc.). Recommend deleting both; confirm nothing links to them.
+- **`old-home.html` (non-beta homepage) isn't on the shared layout yet**, so
+  it has the old header/footer and none of the accessibility fixes (no
+  `lang`, 16 contrast failures, 9 images with AI-prompt alt text). Convert
+  it before it goes live. If the non-beta site needs a different header
+  (e.g. a full nav menu instead of "Join the beta"), give it its own layout
+  (`_layouts/marketing.html` with its own header include) rather than
+  changing the beta pages' shared header.
+- **`style-guide.html`** — looks like Webflow's auto-generated style guide;
+  still published, no fixes. Confirm whether it's needed.
 - **Unlinked pages still need a content pass for accessibility before they go
   live:** they pass automated checks, but their alt text is still Webflow's
   AI prompts — about (9 images), education-tools (5), contact (2),
